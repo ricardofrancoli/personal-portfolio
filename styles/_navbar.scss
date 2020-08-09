@@ -16,7 +16,8 @@
         display: inline-block;
         color: $text-color;
         font-weight: 200;
-        text-decoration: none;
+        text-decoration: line-through;
+        text-decoration-color: $accent-color;
         padding: 13px 30px 13px 30px;
     }
 }
