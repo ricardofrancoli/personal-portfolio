@@ -1,0 +1,19 @@
+.nav-container {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.nav-links {
+    float: right;
+    font-size: 18px;
+    
+    a {
+        display: inline-block;
+        color: $text-color;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 13px 30px 13px 30px;
+    }
+}

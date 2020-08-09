@@ -1,0 +1,231 @@
+.nav-container {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.nav-links {
+  float: right;
+  font-size: 18px;
+}
+
+.nav-links a {
+  display: inline-block;
+  color: #E3E3E3;
+  font-weight: 200;
+  text-decoration: none;
+  padding: 13px 30px 13px 30px;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #1A1A1A;
+  font-family: 'Poppins', sans-serif;
+}
+
+.accent-color {
+  color: #EDB23E;
+}
+
+.title-container {
+  height: 100vh;
+  line-height: 100vh;
+  margin-right: 20vw;
+  margin-left: 10vw;
+}
+
+.title-container .title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  color: #E3E3E3;
+}
+
+.astherisk {
+  color: #EDB23E;
+}
+
+h5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-end: 2em;
+          margin-inline-end: 2em;
+  margin-top: 0;
+  color: #E3E3E3;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#about {
+  color: #E3E3E3;
+  position: relative;
+  font-weight: 300;
+  margin: 0 10vw;
+  min-height: 100vh;
+}
+
+#about .about-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#web-portfolio {
+  color: #E3E3E3;
+  position: relative;
+  font-weight: 300;
+  margin: 0 10vw;
+  min-height: 100vh;
+}
+
+#web-portfolio .web-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#web-portfolio .web-projects .web-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 5vw;
+}
+
+#web-portfolio .web-projects .web-project .project-description {
+  min-height: 30vh;
+  text-align: center;
+}
+
+#web-portfolio .web-projects .web-project .web-screenshot {
+  width: 30vw;
+  -webkit-filter: gray;
+          filter: gray;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.7, -0.12, 0.28, 0.71);
+  transition: all 0.5s cubic-bezier(0.7, -0.12, 0.28, 0.71);
+}
+
+#web-portfolio .web-projects .web-project .web-screenshot:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+#photography-portfolio {
+  color: #E3E3E3;
+  position: relative;
+  font-weight: 300;
+  margin: 0 10vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10vw;
+  min-height: 100vh;
+  text-align: right;
+}
+
+#photography-portfolio .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#photography-portfolio img {
+  width: 20vw;
+  margin: 4vh 1vw 4vh 1vw;
+}
+
+#photography-portfolio h2 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tech-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  min-width: 100px;
+  max-height: 100px;
+  margin: 5px 5px 30px;
+}
+
+.tech-list .lab {
+  padding: 0;
+  font-size: 5rem;
+}
+
+.tech-list .tech-element {
+  color: #EDB23E;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=main.css.map */
