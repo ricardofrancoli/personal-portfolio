@@ -11,19 +11,6 @@ html, body {
     color: $accent-color;
 }
 
-#about {
-    @include section;
-
-    .about-section-container {
-        @include section-container;
-        flex-direction: column;
-    }
-}
-
-#portfolio {
-    @include section;
-}
-
 .section-header {
     font-size: 2.5rem;
     font-weight: 400;

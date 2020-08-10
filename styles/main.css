@@ -281,36 +281,6 @@ html, body {
   color: #EDB23E;
 }
 
-#about {
-  color: #E3E3E3;
-  position: relative;
-  font-weight: 300;
-  margin: 0 10vw;
-  min-height: 100vh;
-}
-
-#about .about-section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#portfolio {
-  color: #E3E3E3;
-  position: relative;
-  font-weight: 300;
-  margin: 0 10vw;
-  min-height: 100vh;
-}
-
 .section-header {
   font-size: 2.5rem;
   font-weight: 400;

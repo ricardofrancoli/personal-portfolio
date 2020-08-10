@@ -1,0 +1,8 @@
+#about {
+    @include section;
+
+    .about-section-container {
+        @include section-container;
+        flex-direction: column;
+    }
+}
