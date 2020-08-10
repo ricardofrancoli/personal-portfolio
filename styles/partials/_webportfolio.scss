@@ -1,0 +1,65 @@
+@import './mixins';
+
+#web-portfolio {
+    @include section;
+
+    .web-projects {
+        @include section-container;
+        align-items: center;
+    
+        .web-project {
+            display: flex;
+            flex-direction: column;
+            margin: 0 5vw;
+
+            .project-description {
+                min-height: 30vh;
+                text-align: center;
+            }
+        
+            .web-screenshot {
+                width: 30vw;
+                filter: gray;
+                filter: grayscale(1);
+                transition: all 0.5s 
+                            cubic-bezier(0.7,-0.12, 0.28, 0.71);
+            }
+        
+            .web-screenshot:hover{
+                filter: none;
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-width: 100px;
+        max-height: 100px;
+        margin: 5px 5px 30px;
+    }
+
+    .lab{
+        padding: 0;
+        font-size: 5rem;
+    }
+
+    .tech-element {
+        color: $accent-color;
+        font-size: 1.1rem;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

@@ -1,20 +1,4 @@
-@import './variables';
-@import './_navbar';
-
-@mixin section {
-    color: $text-color;
-    position: relative;
-    font-weight: 300;
-    margin: 0 10vw;
-    min-height: 100vh;
-}
-
-@mixin section-container {
-    display: flex;
-    justify-content: center;
-    // position: absolute;
-    min-height: 100vh;
-}
+@import './partials/base';
 
 html, body {
     padding: 0;
@@ -25,51 +9,6 @@ html, body {
 
 .accent-color {
     color: $accent-color;
-}
-
-.title-container{
-    height: 100vh;
-    line-height: 100vh;
-    margin-right: 20vw;
-    margin-left: 10vw;
-
-    .title {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        font-weight: 400;
-        font-size: 4rem;
-        line-height: 90%;
-        letter-spacing: -0.03em;
-        color: $text-color;
-    }
-}
-
-.astherisk {
-    color: $accent-color;
-}
-
-h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    height: 3.5rem;
-    width: fit-content;
-    position: relative;
-    padding: -20px;
-    box-shadow: inset 0 0px 0 white, inset 0 -8px 0 $accent-color;
-}
-
-h5 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: block;
-    margin-block-end: 1em;
-    margin-inline-end: 2em;
-    margin-top: 0;
-    color: $text-color;
-    font-size: 0.9rem;
-    font-weight: 400;
 }
 
 #about {
@@ -85,146 +24,20 @@ h5 {
     @include section;
 }
 
-#web-portfolio {
-    @include section;
-
-    .web-projects {
-        @include section-container;
-        align-items: center;
-    
-        .web-project {
-            display: flex;
-            flex-direction: column;
-            margin: 0 5vw;
-
-            .project-description {
-                min-height: 30vh;
-                text-align: center;
-            }
-        
-            .web-screenshot {
-                width: 30vw;
-                filter: gray;
-                filter: grayscale(1);
-                transition: all 0.5s 
-                            cubic-bezier(0.7,-0.12, 0.28, 0.71);
-            }
-        
-            .web-screenshot:hover{
-                filter: none;
-                filter: grayscale(0);
-            }
-        }
-    }
+.section-header {
+    font-size: 2.5rem;
+    font-weight: 400;
+    height: 3.5rem;
+    width: fit-content;
+    position: relative;
+    box-shadow: inset 0 0px 0 white, inset 0 -8px 0 $accent-color;
 }
 
-#photography-portfolio {
-    @include section;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 10vw;
-    min-height: 100vh;
-    text-align: right;
-
-    .image-container {
-        display: flex;
-    }
-
-    img {
-        width: 20vw;
-        margin: 4vh 1vw 4vh 1vw;
-    }
-
-    h2 {
-        align-items: flex-start;
-    }
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.tech-list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    li {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        min-width: 100px;
-        max-height: 100px;
-        margin: 5px 5px 30px;
-    }
-
-    .lab{
-        padding: 0;
-        font-size: 5rem;
-    }
-
-    .tech-element {
-        color: $accent-color;
-        font-size: 1.1rem;
-    }
-}
-
-#contact {
-    @include section;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        max-width: 40vw;
-
-        input, textarea, button {
-            outline: none;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border: 0px solid transparent;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.2rem;
-        }
-
-        input, textarea {
-            background: #2a2a2a;
-            color: $text-color;
-            font-weight: 200;
-            padding-left: 20px;
-        }
-
-        button {
-            cursor: pointer;
-            color: $bg-color;
-            background: $accent-color;
-            max-width: 10vw;
-            height: 3rem;
-            font-weight: 400;
-        }
-
-        input:focus, textarea:focus {
-            // box-shadow: 10px 10px 10px 10px rgba(237, 178, 62, 1);
-            filter: drop-shadow(0 0 2px rgba($accent-color, 0.4));
-        }
-
-        ::-webkit-input-placeholder {
-            color: $text-color;
-        }
-
-        #form-name {
-            margin-top: 4vh;
-        }
-
-        #form-text {
-            height: 40vh;
-            text-align: start;
-        }
-    }
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .section-header {
+    font-size: 1.5rem;
+    height: 2rem;
+    box-shadow: inset 0 0px 0 white, inset 0 -4px 0 $accent-color;
+  }
 }

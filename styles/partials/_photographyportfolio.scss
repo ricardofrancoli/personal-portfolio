@@ -1,0 +1,25 @@
+@import './mixins';
+
+#photography-portfolio {
+    @include section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10vw;
+    min-height: 100vh;
+    text-align: right;
+
+    .image-container {
+        display: flex;
+    }
+
+    img {
+        width: 20vw;
+        margin: 4vh 1vw 4vh 1vw;
+    }
+
+    h2 {
+        align-items: flex-start;
+    }
+}

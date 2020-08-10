@@ -1,0 +1,34 @@
+.title-container{
+    height: 100vh;
+    line-height: 100vh;
+    margin-right: 20vw;
+    margin-left: 10vw;
+
+    .title {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        color: $text-color;
+    }
+}
+
+.astherisk {
+    color: $accent-color;
+}
+
+.footnote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    margin-block-end: 1em;
+    margin-inline-end: 2em;
+    margin-top: 0;
+    color: $text-color;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
