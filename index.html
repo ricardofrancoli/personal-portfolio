@@ -19,7 +19,7 @@
 	</nav>
 </div>
 
-<div id="home" class="landing-page">
+<section id="home" class="landing-page">
 	<div class="title-container">
 		<h1 class="title">
 			Hi, I’m Ricardo.<br>
@@ -27,9 +27,9 @@
 		</h1>
 	</div>
 	<h5 class="footnote"><span class="accent-color">*</span>I also like to take pictures</h5>
-</div>
+</section>
 
-<div id="about">
+<section id="about">
 	<div class="about-section-container">
 
 		<div class="about-me-container">
@@ -83,9 +83,9 @@
 			<p>Hope you like my portfolio 😬</p>
 		</div>
 	</div>
-</div>
+</section>
 
-<div id="portfolio">
+<section id="portfolio">
 
 	<h2 class="section-header">Some of my web projects</h2>
 	<div id="web-portfolio">
@@ -113,22 +113,68 @@
 	<h2 class="section-header">And some of my pics</h2>
 	<div id="photography-portfolio">
 		<div class="colour-photos image-container">
-			<img src="./public/images/madrid-granvia.jpg" alt="street-sunset">
-			<img src="./public/images/guatemala-lake.jpg" alt="lake-green">
-			<img src="./public/images/cuba-cables.jpg" alt="cables-house">
-			<img src="./public/images/belize-palm.jpg" alt="palm-beach">
+			<div class="image-text-container">
+				<img src="./public/images/madrid-granvia.jpg" alt="street-sunset">
+				<div class="text-overlay">
+					<p class="image-text-description">Madrid, 2016</p>
+				</div>
+			</div>
+			<div class="image-text-container">
+				<div class="image-text-container">
+					<img src="./public/images/guatemala-lake.jpg" alt="lake-green">
+					<div class="text-overlay">
+						<p class="image-text-description">Flores, Guatemala, 2017</p>
+					</div>
+				</div>
+			</div>
+			<div class="image-text-container">
+				<div class="image-text-container">
+					<img src="./public/images/cuba-cables.jpg" alt="cables-house">
+					<div class="text-overlay">
+						<p class="image-text-description">Trinidad, Cuba, 2017</p>
+					</div>
+				</div>
+			</div>
+			<div class="image-text-container">
+				<div class="image-text-container">
+					<img src="./public/images/belize-palm.jpg" alt="palm-beach">
+					<div class="text-overlay">
+						<p class="image-text-description">Caye Caulker, Belize, 2018</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="black-white-photos image-container">
-			<img src="./public/images/london-shadow.jpg" alt="wall-shadow">
-			<img src="./public/images/pest-streets.jpg" alt="streets-people">
-			<img src="./public/images/london-cars.jpg" alt="cars-garage">
-			<img src="./public/images/london-bicycles.jpg" alt=bicycles-parking">
+			<div class="image-text-container">
+				<img src="./public/images/london-shadow.jpg" alt="wall-shadow">
+				<div class="text-overlay">
+					<p class="image-text-description">London, 2019</p>
+				</div>
+			</div>
+			<div class="image-text-container">
+				<img src="./public/images/pest-streets.jpg" alt="streets-people">
+				<div class="text-overlay">
+					<p class="image-text-description">Budapest, 2014</p>
+				</div>
+			</div>
+			<div class="image-text-container">
+				<img src="./public/images/london-cars.jpg" alt="cars-garage">
+				<div class="text-overlay">
+					<p class="image-text-description">London, 2018</p>
+				</div>
+			</div>
+			<div class="image-text-container">
+				<img src="./public/images/london-bicycles.jpg" alt="bicycles-parking">
+				<div class="text-overlay">
+					<p class="image-text-description">London, 2019</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
-</div>
+</section>
 
-<div id="contact">
+<section id="contact">
 	<div class="contact-container">
 		<h2 class="section-header">Wanna get in touch?</h2>
 		<form action="" class="contact-form">
@@ -140,7 +186,23 @@
 			</button>
 		</form>
 	</div>
+</section>
+
+<div id="footer">
+	<div class="footer-container">
+		<div class="footer-links-container">
+			<footer class="footer-links">
+				<a href="https://github.com/ricardofrancoli/" class="github-link"><i class="lab la-github"></i></a>
+				<a href="https://www.instagram.com/ricardofrancoli/" class="instagram-link"><i class="lab la-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/ricardo-u-francoli/" class="linkedin-link"><i class="lab la-linkedin-in"></i></a>
+			</footer>
+		</div>
+		<div class="footer-message-container">
+			<p class="with-love">Made with <i class="lar la-heart"></i> by Ricardo</p>
+		</div>
+	</div>
 </div>
 
+<script src="./js/app.js"></script>
 </body>
 </html>

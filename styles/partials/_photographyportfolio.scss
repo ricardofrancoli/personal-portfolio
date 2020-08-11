@@ -1,4 +1,5 @@
 @import './mixins';
+@import './portfoliocontainer';
 
 #photography-portfolio {
     @include section;
@@ -12,11 +13,57 @@
 
     .image-container {
         display: flex;
+        position: relative;
     }
 
     img {
         width: 20vw;
         margin: 4vh 1vw 4vh 1vw;
+    }
+
+    .image-text-container {
+        position: relative;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition:
+            all .2s 
+            cubic-bezier(0.7,-0.12, 0.28, 0.71);
+        z-index: -1;
+    }
+
+    .image-text-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: 300;
+        line-height: 1rem;
+        width: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-shadow: $smooth-shadow;
+    }
+
+    .image-text-container:hover {
+        img{
+            filter: blur(2px) brightness(70%);
+            transition:
+                all 0.5s 
+                cubic-bezier(0.7,-0.12, 0.28, 0.71);
+        }
+
+        .text-overlay {
+            opacity: 1;
+            z-index: 1;
+        }
     }
 
     h2 {

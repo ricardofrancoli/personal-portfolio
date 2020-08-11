@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     background: $bg-color;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .accent-color {
@@ -14,10 +15,19 @@ html, body {
 .section-header {
     font-size: 2.5rem;
     font-weight: 400;
-    height: 3.5rem;
     width: fit-content;
     position: relative;
-    box-shadow: inset 0 0px 0 white, inset 0 -8px 0 $accent-color;
+    background-image: $accent-gradient;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition:
+        background-size 
+        .2s 
+        cubic-bezier(0.7,-0.12, 0.28, 0.71);;
+    &:hover {
+        background-size: 100% 25%;
+    }
 }
 
 $breakpoint-tablet: 768px;
@@ -25,6 +35,6 @@ $breakpoint-tablet: 768px;
   .section-header {
     font-size: 1.5rem;
     height: 2rem;
-    box-shadow: inset 0 0px 0 white, inset 0 -4px 0 $accent-color;
+    box-shadow: inset 0 -4px 0 $accent-color;
   }
 }
