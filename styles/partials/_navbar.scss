@@ -1,5 +1,6 @@
 .nav-container {
     margin-left: 90vw;
+    width: 70px;
     position: fixed;
     top: 0px;
     overflow: hidden;
@@ -15,7 +16,7 @@
     line-height: 1.3rem;
     text-align: right;
     
-    a {
+    .nav-link {
         color: $text-color;
         font-weight: 200;
         text-decoration: none;
@@ -23,7 +24,10 @@
         // padding: 13px 30px 13px 30px;
     }
 
-    .current, a {
-        color: $accent-gradient;
+    .current {
+        background: $accent-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
     }
 }

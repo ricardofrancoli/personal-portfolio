@@ -5,16 +5,21 @@
     @include section;
 
     .web-projects {
-        @include section-container;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
         align-items: center;
+        min-height: 100vh;
     
         .web-project {
+            align-self: start;
             display: flex;
             flex-direction: column;
             margin: 0 5vw;
+            min-height: 30vh;
+            margin: 4vh;
 
             .project-description {
-                min-height: 30vh;
                 text-align: center;
             }
         
@@ -29,6 +34,15 @@
             .web-screenshot:hover{
                 filter: none;
                 filter: grayscale(0);
+            }
+
+            .project-link {
+                text-decoration: none;
+                width: fit-content;
+                background: $accent-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 500;
             }
         }
     }

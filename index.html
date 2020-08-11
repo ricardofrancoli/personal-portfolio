@@ -12,10 +12,10 @@
 
 <div class="nav-container">
 	<nav class="nav-links">
-		<a href="#home">Home</a>
-		<a href="#about">About</a>
-		<a href="#portfolio">Portfolio</a>
-		<a href="#contact">Contact</a>
+		<a href="#home" class="nav-link">Home</a>
+		<a href="#about" class="nav-link">About</a>
+		<a href="#portfolio" class="nav-link">Portfolio</a>
+		<a href="#contact" class="nav-link">Contact</a>
 	</nav>
 </div>
 
@@ -80,7 +80,7 @@
 		</div>
 		<div class="friendly">
 			<p class="stack-joke">...and, of course, <span class="accent-color">vividly</span> browsing StackOverflow!</p>
-			<p>Hope you like my portfolio 😬</p>
+			<p>Hope you like my portfolio <span class="emoji"> 😬</span></p>
 		</div>
 	</div>
 </section>
@@ -92,21 +92,28 @@
 		<div class="web-projects">
 	
 			<div class="world-clock web-project">
-				<a href="https://world-clock.vercel.app/" target="_blank">
-					<img src="./public/images/worldClock.png" alt="world-clock" class="web-screenshot">
-				</a>
-				<p class="project-description">A little app that was quite a lot of fun to make. It’s a simple but (I think) cool world clock I made using mainly two open source APIs.<br>
-					It introduced me to the <s>hellish</s> fun world of dates in JavaScript (spoiler alert, I hated it big time).</p>
+				<img src="./public/images/worldClock.png" alt="world-clock" class="web-screenshot">
+				<p class="project-description">A little app that was quite a lot of fun to make. It’s a simple but (I think) cool world clock I made using mainly two open source APIs. It introduced me to the <s>hellish</s> fun world of dates in JavaScript.</p>
+				<p class="project-description">See in <a href="https://github.com/ricardofrancoli/world-clock" class="project-link" target="_blank">Github</a>
+					<br>
+					Or check the <a href="https://world-clock.vercel.app/" class="project-link" target="_blank">App</a>
+				</p>
 			</div>
 	
 			<div class="movie-fight web-project">
-				<a href="https://world-clock.vercel.app/" target="_blank">
-					<img src="./public/images/movieFight.png" alt="world-clock" class="web-screenshot">
-				</a>
-				<p class="project-description">Really colourfull and easy way to compare two movies (or make them fight!) to see which one is best according to a number of IMDb parameters.<br>
-					Made using Bulma as a way to learn to use an alternative to Bootstrap and the OMDb API.</p>
+				<img src="./public/images/movieFight.png" alt="world-clock" class="web-screenshot">
+				<p class="project-description">Really colourfull and easy way to compare two movies (or make them fight!) to see which one is best according to a number of IMDb parameters.</p>
+				<p class="project-description">See in <a href="https://github.com/ricardofrancoli/movie-fight" class="project-link" target="_blank">Github</a>
+					<br>
+					Or check the <a href="https://movie-fight.ricardofrancoli.vercel.app" class="project-link" target="_blank">App</a>
+				</p>
 			</div>
-	
+			
+			<div class="ecomm web-project">
+				<img src="./public/images/ecomm.png" alt="e-commerce-website" class="web-screenshot">
+				<p class="project-description">A fake e-commerce site I used to practice my backend skills. Made using NodeJS, Express and OOP for some repositories made from scratch.</p>
+				<p class="project-description">See in <a href="https://github.com/ricardofrancoli/ecomm" class="project-link" target="_blank">Github</a></p>
+			</div>
 		</div>
 	</div>
 	
@@ -188,20 +195,20 @@
 	</div>
 </section>
 
-<div id="footer">
+<section id="footer">
 	<div class="footer-container">
 		<div class="footer-links-container">
 			<footer class="footer-links">
-				<a href="https://github.com/ricardofrancoli/" class="github-link"><i class="lab la-github"></i></a>
-				<a href="https://www.instagram.com/ricardofrancoli/" class="instagram-link"><i class="lab la-instagram"></i></a>
-				<a href="https://www.linkedin.com/in/ricardo-u-francoli/" class="linkedin-link"><i class="lab la-linkedin-in"></i></a>
+				<a href="https://github.com/ricardofrancoli/" class="github-link" target="_blank"><i class="lab la-github"></i></a>
+				<a href="https://www.instagram.com/ricardofrancoli/" class="instagram-link" target="_blank"><i class="lab la-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/ricardo-u-francoli/" class="linkedin-link" target="_blank"><i class="lab la-linkedin-in"></i></a>
 			</footer>
 		</div>
 		<div class="footer-message-container">
 			<p class="with-love">Made with <i class="lar la-heart"></i> by Ricardo</p>
 		</div>
 	</div>
-</div>
+</section>
 
 <script src="./js/app.js"></script>
 </body>

@@ -33,13 +33,14 @@
             resize: none;
         }
 
-        button {
+        .btn {
             cursor: pointer;
             color: $bg-color;
-            background: $accent-color;
+            background-color: $accent-color;
             max-width: 10vw;
             height: 3rem;
             font-weight: 400;
+            transition: all 3s ease;
 
             &:hover {
                 background: $accent-gradient-inverted;
