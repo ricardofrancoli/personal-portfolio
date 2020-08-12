@@ -250,6 +250,7 @@ ul {
 .nav-links .current {
   background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
   background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
@@ -429,6 +430,7 @@ ul {
   width: fit-content;
   background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
   background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
