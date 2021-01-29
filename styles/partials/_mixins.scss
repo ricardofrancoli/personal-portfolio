@@ -1,13 +1,18 @@
 @mixin section {
-    color: $text-color;
     position: relative;
     font-weight: 300;
-    margin: 0 10vw;
+    margin: 0;
     min-height: 100vh;
+    width: 100vw;
+
+    .title-content-container {
+        padding: 0 2rem;
+    }
 }
 
 @mixin section-container {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    margin: 0;
 }

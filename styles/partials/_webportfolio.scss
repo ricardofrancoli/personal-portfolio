@@ -2,7 +2,7 @@
 @import './portfoliocontainer';
 
 #web-portfolio {
-    @include section;
+    // @include section;
 
     .web-projects {
         display: grid;
@@ -27,6 +27,7 @@
                 width: 30vw;
                 filter: gray;
                 filter: grayscale(1);
+                box-shadow: $smooth-shadow;
                 transition: all 0.5s 
                             cubic-bezier(0.7,-0.12, 0.28, 0.71);
             }

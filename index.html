@@ -9,40 +9,41 @@
 	<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-
+<!-- 
 <div class="nav-container">
 	<nav class="nav-links">
-		<a href="#home" class="nav-link">Home</a>
+		<a href="#home" class="nav-link current">Home</a>
 		<a href="#about" class="nav-link">About</a>
 		<a href="#portfolio" class="nav-link">Portfolio</a>
 		<a href="#contact" class="nav-link">Contact</a>
 	</nav>
-</div>
+</div> -->
 
 <section id="home" class="landing-page">
 	<div class="title-container">
 		<h1 class="title">
-			Hi, I’m Ricardo.<br>
-			A web developer<span class="accent-color">*</span> in progress.
+			Hi 👋<br>I’m Ricardo.<br><span id="my-role">A web developer.</span>
 		</h1>
 	</div>
-	<h5 class="footnote"><span class="accent-color">*</span>I also like to take pictures</h5>
 </section>
 
 <section id="about">
 	<div class="about-section-container">
 
-		<div class="about-me-container">
-			<p class="about-me-text">
-				I've always been a bit of a <span class="accent-color">tech wizz</span>, but due to a sequence of choices post-high school I decided to study Media and Comms. Don't get me wrong, I really liked my studies. But since I dived into <span class="accent-color">Web Development</span> I knew I needed a change in my career (please, don't blast me with your cliché guns!).
-			</p>
-			<p class="about-me-text">
-				After a few hundreds of hours of online courses, scrolling through a huge number of documentation I'm not sure I still fully understand, countless how-to videos, I can now say I'm ready to <span class="accent-color">seek a new path</span> in this exciting field.
-			</p>
-		</div>
 
-		<div class="tech-experience">
-			<p>Some of the tech I know includes:</p>
+		<article class="about-me-container title-content-container">
+			<h3 class="section-title">about</h3>
+			<p class="about-me-text">
+				I've always been a bit of a tech wizz, but due to a sequence of choices post-high school I decided to study Media and Comms. Don't get me wrong, I really liked my studies. But since I dived into Web Development I decided I needed to switch.
+			</p>
+			<p class="about-me-text">
+				After a few hundreds of hours of online courses, scrolling through a huge number of documentation I'm not sure I still fully understand, countless how-to videos, I can now say I'm ready to seek a new path in this exciting field.
+			</p>
+		</article>
+
+			
+		<article id="tech-experience" class="title-content-container">
+			<h3 class="section-title">stack</h3>
 			<ul class="tech-list">
 				<li>
 					<i class="lab la-html5"></i>
@@ -51,10 +52,6 @@
 				<li>
 					<i class="lab la-css3"></i>
 					<span class="accent-color">CSS3</span>
-				</li>
-				<li>
-					<i class="lab la-bootstrap"></i>
-					<span class="accent-color">Bootstrap</span>
 				</li>
 				<li>
 					<i class="lab la-js-square"></i>
@@ -69,23 +66,20 @@
 					<span class="accent-color">React</span>
 				</li>
 				<li>
-					<i class="lab la-git"></i>
-					<span class="accent-color">Git</span>
-				</li>
-				<li>
 					<i class="lab la-github"></i>
 					<span class="accent-color">GitHub</span>
 				</li>
 			</ul>
-		</div>
-		<div class="friendly">
-			<p class="stack-joke">...and, of course, <span class="accent-color">vividly</span> browsing StackOverflow!</p>
-			<p>Hope you like my portfolio <span class="emoji"> 😬</span></p>
-		</div>
+			<div class="friendly">
+				<p class="stack-joke">...and, of course, vividly browsing StackOverflow!</p>
+				<p>Hope you like my portfolio!</p>
+			</div>
+		</article>
+
 	</div>
 </section>
 
-<section id="portfolio">
+<!-- <section id="portfolio">
 
 	<h2 class="section-header">Some of my web projects</h2>
 	<div id="web-portfolio">
@@ -179,7 +173,7 @@
 		</div>
 	</div>
 
-</section>
+</section> -->
 
 <section id="contact">
 	<div class="contact-container">
