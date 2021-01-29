@@ -4,11 +4,9 @@
   margin: 0;
   min-height: 100vh;
   width: 100vw;
-  background-color: #EDB23E;
-  width: 100vw;
 }
 
-#about .title-content-container {
+#about .article-container {
   padding: 0 2rem;
 }
 
@@ -33,12 +31,17 @@
   line-height: 31px;
 }
 
-#tech-experience {
-  background-color: #1A1A1A;
-  color: white;
+.about-me-container {
+  background-color: #EDB23E;
 }
 
-.tech-list {
+#stack-experience {
+  background-color: #1A1A1A;
+  color: white;
+  min-height: 100vh;
+}
+
+#stack-experience .stack-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,9 +52,10 @@
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 5em 0;
 }
 
-.tech-list li {
+#stack-experience .stack-list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,19 +69,23 @@
   margin: 5px 5px 30px;
 }
 
-.tech-list .lab {
+#stack-experience .stack-list .lab {
   padding: 0;
   font-size: 5rem;
 }
 
-.tech-list .tech-element {
+#stack-experience .stack-list .tech-element {
   color: #EDB23E;
   font-size: 1.1rem;
 }
 
-ul {
+#stack-experience ul {
   list-style-type: none;
   padding: 0;
+}
+
+#stack-experience .stack-joke {
+  font-size: 1.5rem;
 }
 
 .footer-container {
@@ -145,44 +153,21 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-#portfolio {
+#web-portfolio {
   position: relative;
   font-weight: 300;
   margin: 0;
   min-height: 100vh;
   width: 100vw;
+  color: white;
+  font-size: 1.5rem;
 }
 
-#portfolio .title-content-container {
+#web-portfolio .article-container {
   padding: 0 2rem;
 }
 
-#portfolio {
-  position: relative;
-  font-weight: 300;
-  margin: 0;
-  min-height: 100vh;
-  width: 100vw;
-}
-
-#portfolio .title-content-container {
-  padding: 0 2rem;
-}
-
-#web-portfolio .web-projects {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-}
-
-#web-portfolio .web-projects .web-project {
+#web-portfolio .web-project {
   -ms-flex-item-align: start;
       align-self: start;
   display: -webkit-box;
@@ -192,17 +177,18 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 5vw;
-  min-height: 30vh;
-  margin: 4vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10vh 0;
+  min-height: 80vh;
 }
 
-#web-portfolio .web-projects .web-project .project-description {
-  text-align: center;
+#web-portfolio .web-project .project-description {
+  margin: 0;
+  margin-top: 1.5rem;
 }
 
-#web-portfolio .web-projects .web-project .web-screenshot {
-  width: 30vw;
+#web-portfolio .web-project .web-screenshot {
   -webkit-filter: gray;
           filter: gray;
   -webkit-filter: grayscale(1);
@@ -213,24 +199,31 @@ ul {
   transition: all 0.5s cubic-bezier(0.7, -0.12, 0.28, 0.71);
 }
 
-#web-portfolio .web-projects .web-project .web-screenshot:hover {
+#web-portfolio .web-project .web-screenshot:hover {
   -webkit-filter: none;
           filter: none;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-#web-portfolio .web-projects .web-project .project-link {
-  text-decoration: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+#web-portfolio .web-project .web-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  vertical-align: middle;
+  height: 80px;
+}
+
+#web-portfolio .web-project .web-links .project-link {
   background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
   background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 500;
+  font-size: 5rem;
+  line-height: 0;
 }
 
 html, body {
@@ -266,9 +259,10 @@ html, body {
 }
 
 .section-title {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
   display: inherit;
   font-weight: 700;
   font-size: 5rem;

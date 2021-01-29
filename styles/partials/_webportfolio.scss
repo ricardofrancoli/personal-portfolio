@@ -2,29 +2,32 @@
 @import './portfoliocontainer';
 
 #web-portfolio {
-    // @include section;
+    @include section;
+    color: white;
+    font-size: 1.5rem;
 
-    .web-projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 100vh;
+    // .web-projects {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     min-height: 100vh;
     
         .web-project {
             align-self: start;
             display: flex;
             flex-direction: column;
-            margin: 0 5vw;
-            min-height: 30vh;
-            margin: 4vh;
+            justify-content: space-around;
+            margin: 10vh 0;
+            min-height: 80vh;
 
             .project-description {
-                text-align: center;
+                margin: 0;
+                margin-top: 1.5rem;
             }
         
             .web-screenshot {
-                width: 30vw;
+                // width: 50vw;
                 filter: gray;
                 filter: grayscale(1);
                 box-shadow: $smooth-shadow;
@@ -37,15 +40,21 @@
                 filter: grayscale(0);
             }
 
-            .project-link {
-                text-decoration: none;
-                width: fit-content;
-                background: $accent-gradient;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 500;
+            .web-links {
+                display: flex;
+                align-self: flex-start;
+                vertical-align: middle;
+                height: 80px;
+
+                .project-link {
+                    background: $accent-gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 5rem;
+                    line-height: 0;
+                }
             }
         }
     }
-}
+// }
