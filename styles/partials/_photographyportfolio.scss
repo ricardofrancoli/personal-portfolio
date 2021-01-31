@@ -74,7 +74,12 @@
 
 #photography-portfolio {
   max-width: 100vw;
-  // height: 100vh;
+
+  .section-title {
+    padding: 0 2rem;
+    color: white;
+    position: absolute;
+  }
 
   .photography-section-container {
     height: 100vh;
@@ -84,12 +89,6 @@
       margin: auto 5px;
       align-items: center;
     }
-  }
-  
-  .section-title {
-    padding: 0 2rem;
-    color: white;
-    position: absolute;
   }
     
   .swiper-slide img {
