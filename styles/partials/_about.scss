@@ -2,64 +2,61 @@
 @import './variables';
 
 #about {
-    @include section;
+  @include section;
 
-    .about-section-container {
-        @include section-container;
-        flex-direction: column;
-    }
-}
-
-.about-me-text {
-    // padding: 0 2rem;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 31px;
+  .about-section-container {
+    @include section-container;
+    flex-direction: column;
+  }
 }
 
 .about-me-container {
-    // padding: 0 2rem;
-    background-color: $accent-color;
+  background-color: $accent-color;
+
+  .about-me-text {
+    font-size: 28px;
+		font-weight: 500;
+		line-height: 31px;
+  }
 }
 
 #stack-experience {
-    background-color: $bg-color;
-    color: white;
-    min-height: 100vh;
+  background-color: $bg-color;
+	color: white;
+	min-height: 100vh;
 
-    .stack-list {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 5em 0;
+	.stack-list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 5em 0;
     
-        li {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            min-width: 100px;
-            max-height: 100px;
-            margin: 5px 5px 30px;
+			li {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				min-width: 100px;
+				max-height: 100px;
+				margin: 5px 5px 30px;
         }
     
         .lab {
-            padding: 0;
-            font-size: 5rem;
+					padding: 0;
+					font-size: 5rem;
         }
     
         .tech-element {
-            color: $accent-color;
-            font-size: 1.1rem;
+					color: $accent-color;
+					font-size: 1.1rem;
         }
     }
     
     ul {
-        // list-style-type: none;
-        padding: 0;
+			padding: 0;
     }
 
-    .stack-joke {
-        font-size: 1.5rem;
+    .stack-joke{
+			font-size: 1.5rem;
     }
 }

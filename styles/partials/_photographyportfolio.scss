@@ -74,27 +74,55 @@
 
 #photography-portfolio {
   max-width: 100vw;
+  // height: 100vh;
+
+  .photography-section-container {
+    height: 100vh;
+    display: flex;
+
+    .swiper-container {
+      margin: auto 5px;
+      align-items: center;
+    }
+  }
   
-  .swiper-slide {
-    height: 300px;
-    // margin: 0 20px;
+  .section-title {
+    padding: 0 2rem;
+    color: white;
+    position: absolute;
+  }
     
-    img {
-      height: 100%;
-      object-fit: contain
-    } 
+  .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
   }
 
-  li {
-    // padding-left: 20px;
+  .scroll-arrows-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+    position: relative;
+    bottom: 25vh;
+
+    .scroll-arrows {
+
+      .single-scroll-arrow {
+        font-size: 1.5rem;
+      }
+
+      .la-arrow-left {
+        background: $accent-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .la-arrow-right {
+        background: $accent-gradient-inverted;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
-
-  // .image-text-container {
-  //   width: 50vw;
-  // }
-
-  // .swiper-container {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
 }
