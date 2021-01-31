@@ -1,5 +1,5 @@
-// @import './mixins';
-// @import './portfoliocontainer';
+@import './mixins';
+@import './portfoliocontainer';
 
 // #photography-portfolio {
 //     @include section;
@@ -71,3 +71,30 @@
 //         align-items: flex-start;
 //     }
 // }
+
+#photography-portfolio {
+  max-width: 100vw;
+  
+  .swiper-slide {
+    height: 300px;
+    // margin: 0 20px;
+    
+    img {
+      height: 100%;
+      object-fit: contain
+    } 
+  }
+
+  li {
+    // padding-left: 20px;
+  }
+
+  // .image-text-container {
+  //   width: 50vw;
+  // }
+
+  // .swiper-container {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+}

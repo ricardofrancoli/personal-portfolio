@@ -20,3 +20,23 @@ window.addEventListener('scroll', (event) => {
 		}
 	});
 });
+
+const swiper = new Swiper('.swiper-container', {
+	loop: true,
+	speed: 400,
+	slidesPerView: 2,
+	autoHeight: true,
+	grabCursor: true,
+	centeredSlides: true,
+
+	// If we need pagination
+	// pagination: {
+	// 	el: '.swiper-pagination',
+	// },
+
+	// Navigation arrows
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	// },
+});
