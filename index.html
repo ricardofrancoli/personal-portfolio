@@ -31,7 +31,7 @@
 <section id="about">
 	<div class="about-section-container">
 
-		<article class="about-me-container article-container">
+		<article class="about-me-container">
 			<h3 class="section-title">about</h3>
 			<p class="about-me-text">
 				I've always been a bit of a tech wizz, but due to a sequence of choices post-high school I decided to study Media and Comms. Don't get me wrong, I really liked my studies. But since I dived into Web Development I decided I needed to switch.
@@ -41,7 +41,7 @@
 			</p>
 		</article>
 			
-		<article id="stack-experience" class="article-container">
+		<div id="stack-experience">
 			<h3 class="section-title">stack</h3>
 			<ul class="stack-list">
 				<li>
@@ -70,15 +70,15 @@
 				</li>
 			</ul>
 			<p class="stack-joke">...and, of course, vividly browsing StackOverflow!</p>
-		</article>
+		</div>
 
 	</div>
 </section>
 
 <section id="web-portfolio">
 
-	<article class="article-container">
-		<h3 class="section-title">projects</h3>
+	<h3 class="section-title">projects</h3>
+	<div class="section-content-container">
 
 		<div class="web-projects">
 
@@ -109,13 +109,17 @@
 			</div>
 		
 		</div>
-	</article>
+	</div>
 		
 </section>
 	
 <section id="photography-portfolio">
 
-	<h3 class="section-title">photos</h3>
+	<div class="photography-header">
+		<h3 class="section-title">photos</h3>
+		<p class="photo-text">I also love taking pics.<br>Find some here, but more on my <a href="https://instagram.com/ricardofrancoli/" target="_blank"><i class="lab la-instagram"></i></a>.</p>
+	</div>
+
 	<div class="photography-section-container">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -147,11 +151,8 @@
 		</div>
 	</div>
 	
-	<div class="scroll-arrows-container">
-		<div class="scroll-arrows">
-			<i class="las la-arrow-left single-scroll-arrow"></i>
-			<i class="las la-arrow-right single-scroll-arrow"></i>
-		</div>
+	<div class="hand-container">
+		<i class="las la-hand-point-up"></i>
 	</div>
 
 </section>
@@ -159,7 +160,7 @@
 <section id="contact">
 
 	<h3 class="section-title">contact</h3>
-	<article class="article-container">
+	<div class="section-content-container">
 		<div class="contact-container">
 			<form action="" class="contact-form">
 				<input type="text" name="name" placeholder="name" id="form-name" required>
@@ -170,11 +171,12 @@
 				</button>
 			</form>
 		</div>
-	</article>
+	</div>
 
 </section>
 
-<section id="footer">
+<!-- <section id="footer">
+
 	<div class="footer-container">
 		<div class="footer-links-container">
 			<footer class="footer-links">
@@ -187,7 +189,8 @@
 			<p class="with-love">Made with <i class="lar la-heart"></i> by Ricardo</p>
 		</div>
 	</div>
-</section>
+
+</section> -->
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="/js/app.js"></script>

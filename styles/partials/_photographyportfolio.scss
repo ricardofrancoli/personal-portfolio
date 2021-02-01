@@ -74,15 +74,32 @@
 
 #photography-portfolio {
   max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
 
-  .section-title {
-    padding: 0 2rem;
+  .photo-text {
+    margin: 0 7vw;
+    margin-top: 1.5rem;
     color: white;
-    position: absolute;
+    font-weight: 300;
+    line-height: 0.5rem;
+  }
+
+  .la-instagram {
+    background: $accent-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    position: relative;
+    top: 4px;
+    right: 2px;
   }
 
   .photography-section-container {
-    height: 100vh;
     display: flex;
 
     .swiper-container {
@@ -94,34 +111,21 @@
   .swiper-slide img {
     width: 100%;
     object-fit: cover;
+    box-shadow: $smooth-shadow;
   }
 
-  .scroll-arrows-container {
+  .hand-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;   
-    position: relative;
-    bottom: 25vh;
+    margin-bottom: 18%;
 
-    .scroll-arrows {
-
-      .single-scroll-arrow {
-        font-size: 1.5rem;
-      }
-
-      .la-arrow-left {
-        background: $accent-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .la-arrow-right {
-        background: $accent-gradient-inverted;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    .la-hand-point-up {
+      background: $accent-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem;
     }
   }
 }

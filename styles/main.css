@@ -1,33 +1,28 @@
 #about {
+  position: relative;
   font-weight: 300;
   min-height: 100vh;
   width: 100vw;
 }
 
-#about .article-container {
+#about .section-content-container {
   padding: 0 2rem;
 }
 
-#about .about-section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#about .about-me-container {
   min-height: 100vh;
   margin: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about-me-container {
   background-color: #EDB23E;
+  padding-bottom: 10vh;
 }
 
-.about-me-container .about-me-text {
+#about .about-me-container .section-title {
+  color: #1A1A1A;
+  margin-bottom: 20vh;
+}
+
+#about .about-me-container .about-me-text {
+  padding: 0 7vw;
   font-size: 28px;
   font-weight: 500;
   line-height: 31px;
@@ -35,6 +30,15 @@
 
 #stack-experience {
   background-color: #1A1A1A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: white;
   min-height: 100vh;
 }
@@ -50,7 +54,6 @@
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 5em 0;
 }
 
 #stack-experience .stack-list li {
@@ -83,15 +86,17 @@
 
 #stack-experience .stack-joke {
   font-size: 1.5rem;
+  padding: 0 7vw;
 }
 
 #contact {
+  position: relative;
   font-weight: 300;
   min-height: 100vh;
   width: 100vw;
 }
 
-#contact .article-container {
+#contact .section-content-container {
   padding: 0 2rem;
 }
 
@@ -250,16 +255,42 @@
 
 #photography-portfolio {
   max-width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#photography-portfolio .section-title {
-  padding: 0 2rem;
+#photography-portfolio .photo-text {
+  margin: 0 7vw;
+  margin-top: 1.5rem;
   color: white;
-  position: absolute;
+  font-weight: 300;
+  line-height: 0.5rem;
+}
+
+#photography-portfolio .la-instagram {
+  background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
+  background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  position: relative;
+  top: 4px;
+  right: 2px;
 }
 
 #photography-portfolio .photography-section-container {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,41 +307,32 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
 }
 
-#photography-portfolio .scroll-arrows-container {
+#photography-portfolio .hand-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  position: relative;
-  bottom: 25vh;
+  margin-bottom: 18%;
 }
 
-#photography-portfolio .scroll-arrows-container .scroll-arrows .single-scroll-arrow {
-  font-size: 1.5rem;
-}
-
-#photography-portfolio .scroll-arrows-container .scroll-arrows .la-arrow-left {
+#photography-portfolio .hand-container .la-hand-point-up {
   background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
   background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-#photography-portfolio .scroll-arrows-container .scroll-arrows .la-arrow-right {
-  background: -webkit-gradient(linear, left top, right top, from(#f0e211), color-stop(35%, #edb23e), to(#edb23e));
-  background: linear-gradient(90deg, #f0e211 0%, #edb23e 35%, #edb23e 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }
 
 #web-portfolio {
+  position: relative;
   font-weight: 300;
   min-height: 100vh;
   width: 100vw;
@@ -318,7 +340,7 @@
   font-size: 1.5rem;
 }
 
-#web-portfolio .article-container {
+#web-portfolio .section-content-container {
   padding: 0 2rem;
 }
 
@@ -428,9 +450,7 @@ ul {
   font-weight: 700;
   font-size: 5rem;
   letter-spacing: -0.07em;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  margin: 0 7vw;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
