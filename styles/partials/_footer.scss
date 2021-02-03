@@ -1,33 +1,29 @@
+@import '_mixins';
+
 .footer-container {
-    // height: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    // background: $accent-color;
-    // top: 0px;
-    // overflow: hidden;
-    // backdrop-filter: blur(5px);
-    // z-index: 1;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .footer-links-container {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    
-    a {
-        color: $text-color;
-        font-weight: 200;
-        // text-decoration: line-through;
-        // text-decoration-color: $accent-color;
-        padding: 0 20px;
-    }
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+
+	a {
+		color: $text-color;
+		font-weight: 200;
+		padding: 0 20px;
+	}
 }
 
 .footer-message-container {
-    display: flex;
-    justify-content: center;
-    background: $accent-gradient;
-    font-size: 0.8rem;
+	@include accent-gradient;
+
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	font-size: 0.8rem;
 }

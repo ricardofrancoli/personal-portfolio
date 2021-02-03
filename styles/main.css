@@ -20,6 +20,7 @@
   min-height: 80vh;
   width: 100vw;
   padding: 10vh 0;
+  padding-bottom: 0;
 }
 
 #contact .contact-container {
@@ -126,6 +127,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-links-container {
@@ -145,14 +149,18 @@
 }
 
 .footer-message-container {
+  background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
+  background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
-  background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
   font-size: 0.8rem;
 }
 
