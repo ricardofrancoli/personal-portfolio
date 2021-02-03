@@ -164,6 +164,39 @@
   font-size: 0.8rem;
 }
 
+@-webkit-keyframes swipe {
+  0% {
+    margin: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    margin-right: 20px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes swipe {
+  0% {
+    margin: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    margin-right: 20px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.la-hand-point-up {
+  -webkit-animation: swipe 0.8s alternate infinite;
+          animation: swipe 0.8s alternate infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.38, 0.02, 0.65, 0.99);
+          animation-timing-function: cubic-bezier(0.38, 0.02, 0.65, 0.99);
+}
+
 .title-container {
   height: 101vh;
   line-height: 100vh;

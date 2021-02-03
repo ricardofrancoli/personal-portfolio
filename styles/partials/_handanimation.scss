@@ -1,0 +1,16 @@
+@keyframes swipe {
+	0% {
+		margin: 0;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		margin-right: 20px;
+		transform: rotate(-10deg);
+	}
+}
+
+.la-hand-point-up {
+	animation: swipe 0.8s alternate infinite;
+	animation-timing-function: cubic-bezier(0.38, 0.02, 0.65, 0.99);
+}
