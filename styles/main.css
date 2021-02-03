@@ -307,6 +307,7 @@
   width: 100vw;
   padding: 10vh 0;
   background-color: #1A1A1A;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,9 +315,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #stack-experience .stack-list {
@@ -361,7 +364,6 @@
 }
 
 #stack-experience .stack-joke {
-  font-size: 1.5rem;
   margin: 0 7vw;
 }
 

@@ -5,17 +5,17 @@
 	@include section;
 
 	background-color: $bg-color;
+	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	color: white;
+	align-content: center;
+	justify-content: space-between;
 
 	.stack-list {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		// margin: 5em 0;
 
 		li {
 			display: flex;
@@ -42,7 +42,6 @@
 	}
 
 	.stack-joke {
-		font-size: 1.5rem;
 		margin: 0 7vw;
 	}
 }
