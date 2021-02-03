@@ -2,69 +2,23 @@
 @import './variables';
 
 #about {
-  @include section;
+	@include section;
+	background-color: $accent-color;
 
-  .about-me-container {
-    min-height: 100vh;
-    margin: 0;
-		background-color: $accent-color;
-		padding-bottom: 10vh;
+	.about-me-container {
+		min-height: 100vh;
+		margin: 0;
+		margin-bottom: 10vh;
 
 		.section-title {
 			color: $bg-color;
 			margin-bottom: 20vh;
 		}
-		
+
 		.about-me-text {
-			padding: 0 7vw;
+			margin: 0 7vw;
 			font-size: 28px;
-			font-weight: 500;
 			line-height: 31px;
-		}	
+		}
 	}
-}
-
-#stack-experience {
-	background-color: $bg-color;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	color: white;
-	min-height: 100vh;
-
-	.stack-list {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		// margin: 5em 0;
-    
-			li {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-				min-width: 100px;
-				max-height: 100px;
-				margin: 5px 5px 30px;
-        }
-    
-        .lab {
-					padding: 0;
-					font-size: 5rem;
-        }
-    
-        .tech-element {
-					color: $accent-color;
-					font-size: 1.1rem;
-        }
-    }
-    
-    ul {
-			padding: 0;
-    }
-
-    .stack-joke{
-			font-size: 1.5rem;
-			padding: 0 7vw;
-    }
 }

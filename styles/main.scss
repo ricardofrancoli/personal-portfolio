@@ -1,20 +1,22 @@
 @import './partials/base';
 
-html, body {
-    padding: 0;
-    margin: 0;
-    background: $bg-color;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background: $bg-color;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+	font-weight: 300;
 }
 
 ul {
-    list-style-type: none;
-    padding-inline-start: 0;
+	list-style-type: none;
+	padding-inline-start: 0;
 }
 
 .accent-color {
-    color: $accent-color;
+	color: $accent-color;
 }
 
 // img.emojione {
@@ -28,35 +30,32 @@ ul {
 //     line-height: 2;
 // }
 
-.section-header {
-    font-size: 2.5rem;
-    font-weight: 400;
-    width: fit-content;
-    position: relative;
-    background-image: $accent-gradient;
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition:
-        background-size 
-        .2s 
-        cubic-bezier(0.7,-0.12, 0.28, 0.71);;
-    &:hover {
-        background-size: 100% 25%;
-    }
-}
+// .section-header {
+// 	font-size: 2.5rem;
+// 	font-weight: 400;
+// 	width: fit-content;
+// 	position: relative;
+// 	background-image: $accent-gradient;
+// 	background-repeat: no-repeat;
+// 	background-size: 100% 0.2em;
+// 	background-position: 0 88%;
+// 	transition: background-size 0.2s cubic-bezier(0.7, -0.12, 0.28, 0.71);
+// 	&:hover {
+// 		background-size: 100% 25%;
+// 	}
+// }
 
 .section-title {
-    width: fit-content;
-    margin: 0;
-    display: inherit;
-    font-weight: 700;
-    font-size: 5rem;
-    letter-spacing: -0.07em;
-    margin: 0 7vw;
-    color: white;
-    // transform: rotate(-10deg);
-    // transform-origin: center left;
+	width: fit-content;
+	margin: 0;
+	display: inherit;
+	font-weight: 700;
+	font-size: 5rem;
+	letter-spacing: -0.07em;
+	margin: 0 7vw;
+	color: white;
+	// transform: rotate(-10deg);
+	// transform-origin: center left;
 }
 
 // $breakpoint-tablet: 768px;
