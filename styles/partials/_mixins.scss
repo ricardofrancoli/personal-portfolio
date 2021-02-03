@@ -1,15 +1,9 @@
 @import '_variables';
 
 @mixin section {
-	// position: relative;
-	font-weight: 300;
 	min-height: 80vh;
 	width: 100vw;
 	padding: 10vh 0;
-
-	.section-content-container {
-		margin: 0 7vw;
-	}
 }
 
 @mixin accent-gradient {

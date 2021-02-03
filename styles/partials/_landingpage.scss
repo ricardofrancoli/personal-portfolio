@@ -1,24 +1,24 @@
-.title-container{
-    height: 100vh;
-    line-height: 100vh;
-    margin-right: 20vw;
-    margin-left: 10vw;
+.title-container {
+	height: 101vh;
+	line-height: 100vh;
+	margin-right: 20vw;
+	margin-left: 7vw;
 
-    .title {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        font-weight: 400;
-        font-size: 3rem;
-        line-height: 95%;
-        letter-spacing: -0.03em;
-        color: $text-color;
+	.title {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		font-weight: 400;
+		font-size: 3rem;
+		line-height: 95%;
+		letter-spacing: -0.03em;
+		color: $text-color;
 
-        #my-role {
-            background: $accent-gradient;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
+		#my-role {
+			background: $accent-gradient;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
 }

@@ -2,12 +2,13 @@
 @import './variables';
 
 #stack-experience {
+	@include section;
+
 	background-color: $bg-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	color: white;
-	min-height: 100vh;
 
 	.stack-list {
 		display: flex;
