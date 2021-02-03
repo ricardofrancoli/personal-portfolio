@@ -1,3 +1,5 @@
+@import '_mixins';
+
 .title-container {
 	height: 101vh;
 	line-height: 100vh;
@@ -8,17 +10,15 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0;
-		font-weight: 400;
 		font-size: 3rem;
 		line-height: 95%;
 		letter-spacing: -0.03em;
 		color: $text-color;
+		font-weight: 300;
 
 		#my-role {
-			background: $accent-gradient;
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			font-weight: 400;
+			@include accent-gradient;
 		}
 	}
 }

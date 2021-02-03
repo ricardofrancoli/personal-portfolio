@@ -1,31 +1,28 @@
 .nav-container {
-    margin-left: 90vw;
-    width: 70px;
-    position: fixed;
-    top: 0px;
-    overflow: hidden;
-    z-index: 100;
+	margin-left: 90vw;
+	width: 70px;
+	position: fixed;
+	top: 0px;
+	overflow: hidden;
+	z-index: 100;
 }
 
 .nav-links {
-    display: grid;
-    float: right;
-    margin-top: 20px;
-    // margin-right: 2vw;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    text-align: right;
-    
-    .nav-link {
-        color: $text-color;
-        font-weight: 200;
-        text-decoration: none;
-        // text-decoration-color: $accent-color;
-        // padding: 13px 30px 13px 30px;
-    }
+	display: grid;
+	float: right;
+	margin-top: 20px;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	text-align: right;
 
-    .current {
-        @include accent-gradient;
-        font-weight: 600;
-    }
+	.nav-link {
+		color: $text-color;
+		font-weight: 200;
+		text-decoration: none;
+	}
+
+	.current {
+		@include accent-gradient;
+		font-weight: 600;
+	}
 }

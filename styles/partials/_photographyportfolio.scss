@@ -1,5 +1,5 @@
 @import './mixins';
-@import './portfoliocontainer';
+@import './variables';
 
 #photography-portfolio {
 	@include section;
@@ -12,7 +12,7 @@
 	.photo-text {
 		margin: 0 7vw;
 		margin-top: 1.5rem;
-		color: white;
+		color: $text-color;
 		font-weight: 300;
 		line-height: 0.5rem;
 	}

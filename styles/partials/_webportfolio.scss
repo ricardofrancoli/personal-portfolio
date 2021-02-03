@@ -1,9 +1,9 @@
 @import './mixins';
-@import './portfoliocontainer';
+@import './variables';
 
 #web-portfolio {
 	@include section;
-	color: white;
+	color: $text-color;
 	font-size: 1.5rem;
 
 	.web-projects {

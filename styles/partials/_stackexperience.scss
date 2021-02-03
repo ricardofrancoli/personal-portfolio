@@ -5,7 +5,7 @@
 	@include section;
 
 	background-color: $bg-color;
-	color: white;
+	color: $text-color;
 	display: flex;
 	flex-direction: column;
 	align-content: center;

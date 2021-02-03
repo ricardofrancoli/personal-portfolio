@@ -1,4 +1,5 @@
 @import './partials/base';
+@import './partials/variables';
 
 html,
 body {
@@ -53,7 +54,7 @@ ul {
 	font-size: 5rem;
 	letter-spacing: -0.07em;
 	margin: 0 7vw;
-	color: white;
+	color: $text-color;
 	transform: rotate(-4deg);
 	transform-origin: center left;
 }

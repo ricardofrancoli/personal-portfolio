@@ -25,7 +25,6 @@ const swiper = new Swiper('.swiper-container', {
 	loop: true,
 	speed: 400,
 	slidesPerView: 2,
-	autoHeight: true,
 	grabCursor: true,
 	centeredSlides: true,
 	spaceBetween: 20,

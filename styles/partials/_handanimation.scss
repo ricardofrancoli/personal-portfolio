@@ -10,7 +10,40 @@
 	}
 }
 
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
 .la-hand-point-up {
 	animation: swipe 0.8s alternate infinite;
 	animation-timing-function: cubic-bezier(0.38, 0.02, 0.65, 0.99);
+}
+
+.hi-hand {
+	animation: wave-animation 2s 1;
+	transform-origin: 70% 70%;
+	display: inline-block;
 }
