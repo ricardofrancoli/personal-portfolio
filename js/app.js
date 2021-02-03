@@ -29,6 +29,8 @@ const swiper = new Swiper('.swiper-container', {
 	grabCursor: true,
 	centeredSlides: true,
 	spaceBetween: 20,
+	observer: true,
+	observeParents: true,
 
 	// If we need pagination
 	// pagination: {
