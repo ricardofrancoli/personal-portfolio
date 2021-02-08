@@ -20,6 +20,16 @@ ul {
 	color: $accent-color;
 }
 
+* {
+	::selection {
+		background: rgba(5, 255, 172, 0.7);
+		color: $bg-color;
+	}
+}
+
+.nav-container {
+	display: none;
+}
 // img.emojione {
 //     margin: 0px !important;
 //     display: inline !important;

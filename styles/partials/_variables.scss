@@ -1,13 +1,18 @@
-$bg-color: #1A1A1A;
-$text-color: #E3E3E3;
-$accent-color: #EDB23E;
-$accent-gradient: linear-gradient(90deg, rgba(237,178,62,1) 0%, rgba(237,178,62,1) 65%, rgba(240,226,17,1) 100%);
-$accent-gradient-inverted: linear-gradient(90deg, rgba(240,226,17,1) 0%, rgba(237,178,62,1) 35%, rgba(237,178,62,1) 100%);
-$smooth-shadow:
-    0 0 1px rgba(0,0,0,0.12),
-    0 0 2px rgba(0,0,0,0.12),
-    0 0 4px rgba(0,0,0,0.12),
-    0 0 8px rgba(0,0,0,0.12);
-$smooth-shadow2:
-    0 0 20px rgba(0, 0, 0, 0.4),
-    0 4px 4px rgba(87, 87, 87, 0.2);
+$bg-color: #1a1a1a;
+$text-color: #e3e3e3;
+$accent-color: #edb340;
+$accent-gradient: linear-gradient(
+	90deg,
+	rgba(237, 178, 62, 1) 0%,
+	rgba(237, 178, 62, 1) 65%,
+	rgba(240, 226, 17, 1) 100%
+);
+$accent-gradient-inverted: linear-gradient(
+	90deg,
+	rgba(240, 226, 17, 1) 0%,
+	rgba(237, 178, 62, 1) 35%,
+	rgba(237, 178, 62, 1) 100%
+);
+$smooth-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12),
+	0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
+$smooth-shadow2: 0 0 20px rgba(0, 0, 0, 0.4), 0 4px 4px rgba(87, 87, 87, 0.2);
