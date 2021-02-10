@@ -16,6 +16,12 @@
   line-height: 31px;
 }
 
+@media (min-width: 768px) {
+  #about .about-me-container .about-me-text {
+    margin-right: 30vw;
+  }
+}
+
 #contact {
   min-height: 80vh;
   width: 100vw;

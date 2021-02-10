@@ -1,15 +1,11 @@
-@import './mixins';
-@import './variables';
+@import '_mixins';
+@import '_variables';
 
 #about {
 	@include section;
 	background-color: $accent-color;
 
 	.about-me-container {
-		// min-height: 100vh;
-		// margin: 0;
-		// margin-bottom: 10vh;
-
 		.section-title {
 			color: $bg-color;
 			margin-bottom: 20vh;
@@ -20,5 +16,11 @@
 			font-size: 28px;
 			line-height: 31px;
 		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet) {
+	#about .about-me-container .about-me-text {
+		margin-right: 30vw;
 	}
 }
