@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 
 .title-container {
 	height: 101vh;
@@ -20,5 +21,11 @@
 			font-weight: 400;
 			@include accent-gradient;
 		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.title-container .title {
+		font-size: 5rem;
 	}
 }
