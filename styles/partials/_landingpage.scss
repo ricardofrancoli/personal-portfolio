@@ -1,9 +1,14 @@
 @import '_mixins';
 @import '_variables';
 
+#home {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .title-container {
-	height: 101vh;
-	line-height: 100vh;
 	margin-right: 20vw;
 	margin-left: 7vw;
 
@@ -22,6 +27,11 @@
 			@include accent-gradient;
 		}
 	}
+}
+
+.la-long-arrow-alt-down {
+	color: $text-color;
+	font-size: 3rem;
 }
 
 @media (min-width: $breakpoint-tablet) {

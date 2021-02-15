@@ -165,6 +165,24 @@
   font-size: 0.8rem;
 }
 
+@-webkit-keyframes up-down {
+  0% {
+    top: 94%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    top: 94%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+
 @-webkit-keyframes swipe {
   0% {
     margin: 0;
@@ -209,8 +227,16 @@
             transform: rotate(14deg);
   }
   40% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  60% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  80% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -236,13 +262,32 @@
             transform: rotate(14deg);
   }
   40% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  60% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  80% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+}
+
+.la-long-arrow-alt-down {
+  -webkit-animation: up-down 0.7s alternate infinite;
+          animation: up-down 0.7s alternate infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.23, -0.08, 0.9, 0.76);
+          animation-timing-function: cubic-bezier(0.23, -0.08, 0.9, 0.76);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .la-hand-point-up {
@@ -260,9 +305,21 @@
   display: inline-block;
 }
 
+#home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .title-container {
-  height: 101vh;
-  line-height: 100vh;
   margin-right: 20vw;
   margin-left: 7vw;
 }
@@ -285,6 +342,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.la-long-arrow-alt-down {
+  color: #e3e3e3;
+  font-size: 3rem;
 }
 
 @media (min-width: 768px) {
