@@ -333,6 +333,7 @@
   letter-spacing: -0.03em;
   color: #e3e3e3;
   font-weight: 300;
+  padding-bottom: 5vh;
 }
 
 .title-container .title #my-role {
@@ -342,6 +343,25 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.email {
+  font-weight: 300;
+}
+
+.email p {
+  color: #e3e3e3;
+}
+
+.email .la-envelope {
+  background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
+  background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  position: relative;
+  top: 2px;
 }
 
 .la-long-arrow-alt-down {

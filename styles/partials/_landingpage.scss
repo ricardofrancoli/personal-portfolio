@@ -21,11 +21,27 @@
 		letter-spacing: -0.03em;
 		color: $text-color;
 		font-weight: 300;
+		padding-bottom: 5vh;
 
 		#my-role {
 			font-weight: 400;
 			@include accent-gradient;
 		}
+	}
+}
+
+.email {
+	font-weight: 300;
+
+	p {
+		color: $text-color;
+	}
+
+	.la-envelope {
+		@include accent-gradient;
+		font-size: 1.5rem;
+		position: relative;
+		top: 2px;
 	}
 }
 
