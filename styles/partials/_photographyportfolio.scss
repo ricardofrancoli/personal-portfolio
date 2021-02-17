@@ -1,9 +1,8 @@
-@import './mixins';
-@import './variables';
+@import '_mixins';
+@import '_variables';
 
 #photography-portfolio {
 	@include section;
-
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -18,10 +17,7 @@
 	}
 
 	.la-instagram {
-		background: $accent-gradient;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include accent-gradient;
 		font-size: 1.5em;
 		position: relative;
 		top: 4px;

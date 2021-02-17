@@ -2,7 +2,7 @@
 @import '_variables';
 
 #home {
-	height: 100vh;
+	height: 101vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -23,9 +23,13 @@
 		font-weight: 300;
 		padding-bottom: 5vh;
 
-		#my-role {
+		.my-role {
 			font-weight: 400;
-			@include accent-gradient;
+			color: $accent-color;
+
+			.my-role-gradient {
+				@include accent-gradient;
+			}
 		}
 	}
 }

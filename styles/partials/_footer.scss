@@ -19,10 +19,13 @@
 }
 
 .footer-message-container {
-	@include accent-gradient;
-
 	display: flex;
-	width: 50%;
 	justify-content: center;
+	width: 50%;
+	color: $accent-color;
 	font-size: 0.8rem;
+
+	.la-heart {
+		color: #f0e211;
+	}
 }
