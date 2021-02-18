@@ -1,10 +1,17 @@
+let burger = document.querySelector('.burger');
+let navLinksContainer = document.querySelector('.nav-links');
 let mainNavLinks = document.querySelectorAll('nav a');
 let mainSections = document.querySelectorAll('section');
+
+burger.addEventListener('click', () => {
+	burger.classList.toggle('open');
+	navLinksContainer.classList.toggle('hidden');
+});
 
 let lastId;
 let cur = [];
 
-window.addEventListener('scroll', (event) => {
+window.addEventListener('scroll', () => {
 	let fromTop = window.scrollY;
 
 	mainNavLinks.forEach((link) => {
