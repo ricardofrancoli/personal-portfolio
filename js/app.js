@@ -1,11 +1,20 @@
 let burger = document.querySelector('.burger');
-let navLinksContainer = document.querySelector('.nav-links');
-let mainNavLinks = document.querySelectorAll('nav a');
+let navLinksWrapper = document.querySelector('.nav-wrapper');
+let navLinks = document.querySelectorAll('nav a');
 let mainSections = document.querySelectorAll('section');
 
-burger.addEventListener('click', () => {
-	burger.classList.toggle('open');
-	navLinksContainer.classList.toggle('hidden');
+[burger, navLinksWrapper].forEach((item) => {
+	item.addEventListener('click', () => {
+		burger.classList.toggle('open');
+		navLinksWrapper.classList.toggle('hidden');
+	});
+});
+
+window.addEventListener('scroll', () => {
+	if (burger.classList.contains('open')) {
+		burger.classList.remove('open');
+		navLinksWrapper.classList.add('hidden');
+	}
 });
 
 let lastId;
@@ -14,7 +23,7 @@ let cur = [];
 window.addEventListener('scroll', () => {
 	let fromTop = window.scrollY;
 
-	mainNavLinks.forEach((link) => {
+	navLinks.forEach((link) => {
 		let section = document.querySelector(link.hash);
 
 		if (

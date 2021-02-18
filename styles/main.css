@@ -417,8 +417,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   float: right;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   text-align: right;
   -webkit-transition: visibility 0s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
