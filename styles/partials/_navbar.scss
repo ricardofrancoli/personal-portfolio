@@ -14,19 +14,19 @@
 		height: 3em;
 		width: 3em;
 		position: fixed;
-		font-size: 0.7rem;
+		font-size: 1rem;
 	}
 
 	.nav-wrapper {
 		position: absolute;
-		margin-top: 2rem;
+		margin-top: 3rem;
 	}
 
 	.nav-links {
 		display: flex;
 		flex-direction: column;
 		float: right;
-		font-size: 0.9rem;
+		font-size: 1.1rem;
 		line-height: 1.7rem;
 		text-align: right;
 		transition: visibility 0s, opacity 0.5s linear;
@@ -112,9 +112,9 @@
 	top: 0;
 }
 
-// .burger.burger-squeeze.open .burger-lines:before {
-// 	transform: rotate(-45deg);
-// }
+.burger.burger-squeeze.open .burger-lines:before {
+	transform: rotate(-4deg);
+}
 
 // .burger.burger-squeeze.open .burger-lines:after {
 // 	transform: rotate(45deg);

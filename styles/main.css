@@ -400,12 +400,12 @@
   height: 3em;
   width: 3em;
   position: fixed;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .nav-container .nav-wrapper {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .nav-container .nav-links {
@@ -417,7 +417,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   float: right;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
   text-align: right;
   -webkit-transition: visibility 0s, opacity 0.5s linear;
@@ -486,6 +486,11 @@
 .burger.burger-squeeze.open .burger-lines:before {
   left: 0;
   top: 0;
+}
+
+.burger.burger-squeeze.open .burger-lines:before {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
 }
 
 @media (min-width: 768px) {
