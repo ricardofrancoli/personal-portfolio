@@ -20,6 +20,8 @@
 	.nav-wrapper {
 		position: absolute;
 		margin-top: 3rem;
+		transition: transform 1s ease-in-out;
+		// transform: translate(50px);
 	}
 
 	.nav-links {
@@ -29,7 +31,6 @@
 		font-size: 1.5rem;
 		line-height: 3rem;
 		text-align: right;
-		transition: visibility 0s, opacity 0.5s linear;
 		cursor: pointer;
 
 		.nav-link {
@@ -41,8 +42,11 @@
 
 	.hidden {
 		// display: none;
-		visibility: hidden;
-		opacity: 0;
+		position: absolute;
+		left: 50px;
+		// transition: transform 1s ease-in-out;
+		// visibility: hidden;
+		// opacity: 0;
 	}
 }
 

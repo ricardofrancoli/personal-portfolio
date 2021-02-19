@@ -1,5 +1,6 @@
 let burger = document.querySelector('.burger');
 let navLinksWrapper = document.querySelector('.nav-wrapper');
+let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('nav a');
 let mainSections = document.querySelectorAll('section');
 
@@ -7,6 +8,7 @@ let mainSections = document.querySelectorAll('section');
 	item.addEventListener('click', () => {
 		burger.classList.toggle('open');
 		navLinksWrapper.classList.toggle('hidden');
+		sections.forEach((section) => section.classList.toggle('blurred-bg'));
 	});
 });
 
@@ -14,6 +16,7 @@ window.addEventListener('scroll', () => {
 	if (burger.classList.contains('open')) {
 		burger.classList.remove('open');
 		navLinksWrapper.classList.add('hidden');
+		sections.forEach((section) => section.classList.remove('blurred-bg'));
 	}
 });
 
