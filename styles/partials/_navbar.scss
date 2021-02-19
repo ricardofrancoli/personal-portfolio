@@ -20,8 +20,9 @@
 	.nav-wrapper {
 		position: absolute;
 		margin-top: 3rem;
-		transition: transform 1s ease-in-out;
-		// transform: translate(50px);
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0s, opacity 0.5s ease-in-out;
 	}
 
 	.nav-links {
@@ -36,17 +37,14 @@
 		.nav-link {
 			color: $text-color;
 			text-decoration: none;
-			z-index: 1000;
 		}
 	}
 
 	.hidden {
-		// display: none;
 		position: absolute;
-		left: 50px;
-		// transition: transform 1s ease-in-out;
-		// visibility: hidden;
-		// opacity: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s, opacity 5s ease-in-out;
 	}
 }
 
