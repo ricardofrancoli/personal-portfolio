@@ -120,6 +120,15 @@
   text-align: start;
 }
 
+@media (min-width: 768px) {
+  #contact .contact-container {
+    margin-right: 20vw;
+  }
+  #contact .contact-container .contact-form .btn {
+    width: 150px;
+  }
+}
+
 .footer-container {
   width: 100%;
   display: -webkit-box;
@@ -449,6 +458,8 @@ section {
 .nav-container .nav-links .nav-link {
   color: #e3e3e3;
   text-decoration: none;
+  -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.12));
+          filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.12));
 }
 
 .nav-container .hidden {
@@ -516,25 +527,6 @@ section {
           transform: rotate(-4deg);
 }
 
-@media (min-width: 768px) {
-  .nav-container {
-    margin-left: 90vw;
-    width: 70px;
-    position: fixed;
-    top: 0px;
-    overflow: hidden;
-    z-index: 100;
-  }
-  .current {
-    background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
-    background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-  }
-}
-
 #photography-portfolio {
   min-height: 80vh;
   width: 100vw;
@@ -554,8 +546,7 @@ section {
 }
 
 #photography-portfolio .photo-text {
-  margin: 0 7vw;
-  margin-top: 1.5rem;
+  margin: 5vh 7vw;
   color: #e3e3e3;
   font-weight: 300;
   line-height: 0.5rem;
@@ -612,6 +603,13 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  #photography-portfolio .photography-section-container .swiper-container {
+    margin: auto 5px;
+    margin-bottom: 5vh;
+  }
 }
 
 #stack-experience {
@@ -674,6 +672,9 @@ section {
 }
 
 @media (min-width: 768px) {
+  #stack-experience {
+    min-height: 50vh;
+  }
   #stack-experience .stack-list {
     margin: auto 10vw;
   }
@@ -707,8 +708,6 @@ section {
 }
 
 #web-portfolio .web-project .web-screenshot {
-  -webkit-filter: gray;
-          filter: gray;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
@@ -724,12 +723,14 @@ section {
   -ms-flex-item-align: start;
       align-self: flex-start;
   vertical-align: middle;
-  height: 80px;
 }
 
 #web-portfolio .web-project .web-links .project-link {
   font-size: 5rem;
   line-height: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #web-portfolio .web-project .web-links .project-link .la-github,
@@ -750,29 +751,41 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 80vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 5vh;
   }
   #web-portfolio .web-projects-container .web-projects {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: minmax(min-content, max-content);
-        grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
-        grid-template-rows: minmax(min-content, max-content);
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 70px;
+    justify-items: center;
     margin: 0;
   }
   #web-portfolio .web-projects-container .web-projects .web-project {
-    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    justify-self: center;
     margin-top: 0;
   }
   #web-portfolio .web-projects-container .web-projects .web-project img {
     -o-object-fit: cover;
        object-fit: cover;
-    max-height: 100px;
+    width: 90%;
+  }
+  #web-portfolio .web-projects-container .web-projects .web-project .web-links {
+    margin-top: auto;
   }
 }
 

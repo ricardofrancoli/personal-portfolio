@@ -20,7 +20,6 @@
 		}
 
 		.web-screenshot {
-			filter: gray;
 			filter: grayscale(1);
 			box-shadow: $smooth-shadow;
 			max-width: 80vw;
@@ -31,11 +30,12 @@
 			display: flex;
 			align-self: flex-start;
 			vertical-align: middle;
-			height: 80px;
+			// height: 80px;
 
 			.project-link {
 				font-size: 5rem;
 				line-height: 0;
+				width: fit-content;
 
 				.la-github,
 				.la-external-link-square-alt {
@@ -51,23 +51,33 @@
 		.web-projects-container {
 			display: flex;
 			flex-direction: column;
-			height: 80vh;
 			justify-content: center;
+			margin-top: 5vh;
 
 			.web-projects {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				grid-template-rows: minmax(min-content, max-content);
+				column-gap: 20px;
+				row-gap: 70px;
+				justify-items: center;
 				margin: 0;
 
 				.web-project {
-					height: 10vh;
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					justify-self: center;
 					margin-top: 0;
 
 					img {
 						object-fit: cover;
 						// display: none;
-						max-height: 100px;
+						// height: 100px;
+						width: 90%;
+					}
+
+					.web-links {
+						margin-top: auto;
 					}
 				}
 			}

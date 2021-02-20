@@ -9,8 +9,7 @@
 	justify-content: space-between;
 
 	.photo-text {
-		margin: 0 7vw;
-		margin-top: 1.5rem;
+		margin: 5vh 7vw;
 		color: $text-color;
 		font-weight: 300;
 		line-height: 0.5rem;
@@ -49,5 +48,12 @@
 			@include accent-gradient;
 			font-size: 3rem;
 		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet) {
+	#photography-portfolio .photography-section-container .swiper-container {
+		margin: auto 5px;
+		margin-bottom: 5vh;
 	}
 }

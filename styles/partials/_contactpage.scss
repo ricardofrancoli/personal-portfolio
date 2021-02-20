@@ -79,3 +79,13 @@
 		}
 	}
 }
+
+@media (min-width: $breakpoint-tablet) {
+	#contact .contact-container {
+		margin-right: 20vw;
+
+		.contact-form .btn {
+			width: 150px;
+		}
+	}
+}

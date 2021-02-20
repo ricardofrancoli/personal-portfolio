@@ -1,5 +1,5 @@
-@import './mixins';
-@import './variables';
+@import '_mixins';
+@import '_variables';
 
 #stack-experience {
 	@include section;
@@ -41,7 +41,11 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-	#stack-experience .stack-list {
-		margin: auto 10vw;
+	#stack-experience {
+		min-height: 50vh;
+
+		.stack-list {
+			margin: auto 10vw;
+		}
 	}
 }
