@@ -20,7 +20,19 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+	#about .about-me-container {
+		.section-title {
+			margin-bottom: 10vh;
+		}
+
+		.about-me-text {
+			margin-right: 30vw;
+		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet-lrg) {
 	#about .about-me-container .about-me-text {
-		margin-right: 30vw;
+		margin-right: 50vw;
 	}
 }

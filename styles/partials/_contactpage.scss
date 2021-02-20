@@ -7,7 +7,7 @@
 
 	.contact-container {
 		margin: 0 7vw;
-		margin-bottom: 12%;
+		margin-bottom: 5%;
 	}
 
 	.article-container {
@@ -81,11 +81,24 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+	#contact {
+		.contact-container {
+			margin-right: 20vw;
+			margin-bottom: 0;
+
+			.contact-form .btn {
+				width: 150px;
+			}
+		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet-lrg) {
 	#contact .contact-container {
-		margin-right: 20vw;
+		margin-right: 30vw;
 
 		.contact-form .btn {
-			width: 150px;
+			width: 200px;
 		}
 	}
 }

@@ -17,8 +17,17 @@
 }
 
 @media (min-width: 768px) {
+  #about .about-me-container .section-title {
+    margin-bottom: 10vh;
+  }
   #about .about-me-container .about-me-text {
     margin-right: 30vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about .about-me-container .about-me-text {
+    margin-right: 50vw;
   }
 }
 
@@ -31,7 +40,7 @@
 
 #contact .contact-container {
   margin: 0 7vw;
-  margin-bottom: 12%;
+  margin-bottom: 5%;
 }
 
 #contact .article-container {
@@ -123,9 +132,19 @@
 @media (min-width: 768px) {
   #contact .contact-container {
     margin-right: 20vw;
+    margin-bottom: 0;
   }
   #contact .contact-container .contact-form .btn {
     width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #contact .contact-container {
+    margin-right: 30vw;
+  }
+  #contact .contact-container .contact-form .btn {
+    width: 200px;
   }
 }
 
@@ -677,6 +696,12 @@ section {
   }
   #stack-experience .stack-list {
     margin: auto 10vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #stack-experience {
+    min-height: 40vh;
   }
 }
 

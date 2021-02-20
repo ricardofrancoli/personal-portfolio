@@ -49,3 +49,9 @@
 		}
 	}
 }
+
+@media (min-width: $breakpoint-tablet-lrg) {
+	#stack-experience {
+		min-height: 40vh;
+	}
+}
