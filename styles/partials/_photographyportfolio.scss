@@ -27,8 +27,12 @@
 		display: flex;
 
 		.swiper-container {
-			margin: auto 5px;
+			margin: auto;
 			align-items: center;
+		}
+
+		.swiper-wrapper {
+			max-width: 100%;
 		}
 	}
 
@@ -55,23 +59,19 @@
 
 @media (min-width: $breakpoint-tablet) {
 	#photography-portfolio .photography-section-container .swiper-container {
-		margin: auto 5px;
 		margin-bottom: 5vh;
 	}
 }
 
 @media (min-width: $breakpoint-desktop) {
 	#photography-portfolio .photography-section-container .swiper-container {
-		margin: 10vh 5px;
+		margin: 10vh 0;
 
 		.swiper-slide {
-			// height: auto;
 			width: 5px;
 
 			img {
 				max-width: 100%;
-				// max-height: 75vh;
-				// object-fit: cover;
 				box-shadow: $smooth-shadow;
 				border-radius: 5px;
 			}

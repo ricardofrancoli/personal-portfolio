@@ -141,7 +141,7 @@
 
 @media (min-width: 1024px) {
   #contact .contact-container {
-    margin-right: 30vw;
+    margin-right: 50vw;
   }
   #contact .contact-container .contact-form .btn {
     width: 200px;
@@ -590,10 +590,14 @@ section {
 }
 
 #photography-portfolio .photography-section-container .swiper-container {
-  margin: auto 5px;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#photography-portfolio .photography-section-container .swiper-wrapper {
+  max-width: 100%;
 }
 
 #photography-portfolio .swiper-slide img {
@@ -626,14 +630,13 @@ section {
 
 @media (min-width: 768px) {
   #photography-portfolio .photography-section-container .swiper-container {
-    margin: auto 5px;
     margin-bottom: 5vh;
   }
 }
 
 @media (min-width: 1200px) {
   #photography-portfolio .photography-section-container .swiper-container {
-    margin: 10vh 5px;
+    margin: 10vh 0;
   }
   #photography-portfolio .photography-section-container .swiper-container .swiper-slide {
     width: 5px;
@@ -844,6 +847,7 @@ body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 * ::-moz-selection {
