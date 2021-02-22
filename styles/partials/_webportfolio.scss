@@ -49,9 +49,6 @@
 @media (min-width: $breakpoint-tablet) {
 	#web-portfolio {
 		.web-projects-container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
 			margin-top: 5vh;
 
 			.web-projects {
@@ -81,6 +78,17 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	#web-portfolio .web-projects-container {
+		margin-top: 10vh;
+
+		.web-projects {
+			column-gap: 80px;
+			row-gap: 120px;
 		}
 	}
 }

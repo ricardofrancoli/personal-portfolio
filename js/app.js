@@ -50,6 +50,10 @@ const swiper = new Swiper('.swiper-container', {
 	observer: true,
 	observeParents: true,
 
+	breakpoints: {
+		1200: { slidesPerView: 5 },
+	},
+
 	// If we need pagination
 	// pagination: {
 	// 	el: '.swiper-pagination',
