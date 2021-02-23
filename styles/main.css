@@ -647,6 +647,9 @@ section {
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
   }
+  #photography-portfolio .hand-container .la-hand-point-up {
+    display: none;
+  }
 }
 
 #stack-experience {
