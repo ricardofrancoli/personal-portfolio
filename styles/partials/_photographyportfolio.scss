@@ -64,16 +64,22 @@
 }
 
 @media (min-width: $breakpoint-desktop) {
-	#photography-portfolio .photography-section-container .swiper-container {
-		margin: 10vh 0;
+	#photography-portfolio {
+		.photography-section-container .swiper-container {
+			margin: 10vh 0;
 
-		.swiper-slide {
-			width: 5px;
+			.swiper-slide {
+				width: 5px;
 
-			img {
-				max-width: 100%;
-				box-shadow: $smooth-shadow;
-				border-radius: 5px;
+				img {
+					max-width: 100%;
+					box-shadow: $smooth-shadow;
+					border-radius: 5px;
+				}
+			}
+
+			.hand-container {
+				display: none;
 			}
 		}
 	}
