@@ -20,6 +20,14 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+window.addEventListener('click', (event) => {
+	if (!event.target.matches('.open')) {
+		burger.classList.remove('open');
+		navLinksWrapper.classList.add('hidden');
+		sections.forEach((section) => section.classList.remove('blurred-bg'));
+	}
+});
+
 let lastId;
 let cur = [];
 
