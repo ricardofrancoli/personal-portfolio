@@ -213,19 +213,19 @@ section {
 
 @-webkit-keyframes up-down {
   0% {
-    top: 94%;
+    top: 88%;
   }
   100% {
-    top: 95%;
+    top: 89%;
   }
 }
 
 @keyframes up-down {
   0% {
-    top: 94%;
+    top: 88%;
   }
   100% {
-    top: 95%;
+    top: 89%;
   }
 }
 
