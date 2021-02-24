@@ -101,13 +101,12 @@
   background-color: #edb340;
   height: 3rem;
   font-weight: 400;
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #contact .contact-form .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#f0e211), color-stop(35%, #edb23e), to(#edb23e));
-  background: linear-gradient(90deg, #f0e211 0%, #edb23e 35%, #edb23e 100%);
+  background: #f0e211;
 }
 
 #contact .contact-form input:focus,

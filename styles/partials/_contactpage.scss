@@ -53,10 +53,10 @@
 			background-color: $accent-color;
 			height: 3rem;
 			font-weight: 400;
-			transition: all 3s ease;
+			transition: all 0.5s ease;
 
 			&:hover {
-				background: $accent-gradient-inverted;
+				background: $secondary-accent-color;
 			}
 		}
 
