@@ -24,6 +24,30 @@ ul {
 	padding-inline-start: 0;
 }
 
+button {
+	outline: none;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: 0px solid transparent;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	box-shadow: $smooth-shadow;
+}
+
+.btn {
+	cursor: pointer;
+	color: $bg-color;
+	background-color: $accent-color;
+	height: 3rem;
+	padding: 0 2rem;
+	font-weight: 400;
+	transition: all 0.5s ease;
+
+	&:hover {
+		background: $secondary-accent-color;
+	}
+}
+
 .accent-color {
 	color: $accent-color;
 }

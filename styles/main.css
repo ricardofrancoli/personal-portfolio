@@ -95,20 +95,6 @@
   resize: none;
 }
 
-#contact .contact-form .btn {
-  cursor: pointer;
-  color: #1a1a1a;
-  background-color: #edb340;
-  height: 3rem;
-  font-weight: 400;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#contact .contact-form .btn:hover {
-  background: #f0e211;
-}
-
 #contact .contact-form input:focus,
 #contact .contact-form textarea:focus {
   -webkit-box-shadow: 0 0 3px rgba(237, 179, 64, 0.6);
@@ -363,11 +349,19 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 20vw;
+  padding-left: 7vw;
 }
 
-.title-container {
-  margin-right: 20vw;
-  margin-left: 7vw;
+#home .la-envelope {
+  font-size: 1.5rem;
+  position: relative;
+  top: 2px;
+}
+
+#home .la-long-arrow-alt-down {
+  color: #e3e3e3;
+  font-size: 3rem;
 }
 
 .title-container .title {
@@ -393,30 +387,6 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.email {
-  font-weight: 300;
-}
-
-.email p {
-  color: #e3e3e3;
-}
-
-.email .la-envelope {
-  background: -webkit-gradient(linear, left top, right top, from(#edb23e), color-stop(65%, #edb23e), to(#f0e211));
-  background: linear-gradient(90deg, #edb23e 0%, #edb23e 65%, #f0e211 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.5rem;
-  position: relative;
-  top: 2px;
-}
-
-.la-long-arrow-alt-down {
-  color: #e3e3e3;
-  font-size: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -867,6 +837,32 @@ ul {
   list-style-type: none;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+
+button {
+  outline: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 0px solid transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+  cursor: pointer;
+  color: #1a1a1a;
+  background-color: #edb340;
+  height: 3rem;
+  padding: 0 2rem;
+  font-weight: 400;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #f0e211;
 }
 
 .accent-color {
