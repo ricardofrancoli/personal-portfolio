@@ -6,12 +6,22 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding-right: 20vw;
+	padding-left: 7vw;
+
+	.la-envelope {
+		font-size: 1.5rem;
+		position: relative;
+		top: 2px;
+	}
+
+	.la-long-arrow-alt-down {
+		color: $text-color;
+		font-size: 3rem;
+	}
 }
 
 .title-container {
-	margin-right: 20vw;
-	margin-left: 7vw;
-
 	.title {
 		display: inline-block;
 		vertical-align: middle;
@@ -32,26 +42,6 @@
 			}
 		}
 	}
-}
-
-.email {
-	font-weight: 300;
-
-	p {
-		color: $text-color;
-	}
-
-	.la-envelope {
-		@include accent-gradient;
-		font-size: 1.5rem;
-		position: relative;
-		top: 2px;
-	}
-}
-
-.la-long-arrow-alt-down {
-	color: $text-color;
-	font-size: 3rem;
 }
 
 @media (min-width: $breakpoint-tablet) {
